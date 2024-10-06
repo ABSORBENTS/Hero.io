@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinema Booking</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <h3 class="ter1">Cinema Booking</h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <button class="btn">Login</button>
+                        </li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/m1.jpg" class="d-block w-100 imga" alt="Movie poster 1">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/m2.jpg" class="d-block w-100 imga" alt="Movie poster 2">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/m3.jpg" class="d-block w-100 imga" alt="Movie poster 3">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/m4.jpg" class="d-block w-100 imga" alt="Movie poster 4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Now Showing</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Coming Soon</button>
+            </li>
+           
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+             
+              <div class="container mt-6">
+             
+                <div class="row">
+                    <!-- Repeat this card structure as needed -->
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="/images/Where To Stream The 2022 Oscar-Nominated Movies, And Which Ones To Watch With Your Kids.jpg" class="card-img-top" alt="Movie Title 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Movie 1</h5>
+                                <a href="#" class="btn">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="/images/Artemis Fowl (2020).jpg" class="card-img-top" alt="Movie Title 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Movie 2</h5>
+                                <a href="#" class="btn">Buy Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                      <div class="card">
+                          <img src="/images/The Best Netflix Shows to Binge Watch This Summer.jpg" class="card-img-top" alt="Movie Title 2">
+                          <div class="card-body text-center">
+                              <h5 class="card-title">Movie 3</h5>
+                              <a href="#" class="btn">Buy Tickets</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img src="/images/Kingsman the golden circle.jpg" class="card-img-top" alt="Movie Title 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Movie4</h5>
+                            <a href="#" class="btn">Buy Tickets</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                  <div class="card">
+                      <img src="/images/The Best Netflix Shows to Binge Watch This Summer.jpg" class="card-img-top" alt="Movie Title 2">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Movie5</h5>
+                          <a href="#" class="btn">Buy Tickets</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-4">
+                <div class="card">
+                    <img src="/images/Marvel Movie Inspirational Quotes.jpg" class="card-img-top" alt="Movie Title 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Movie6</h5>
+                        <a href="#" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+              <div class="card">
+                  <img src="/images/Black Panther _ Pantera Negra, 2018.jpg" class="card-img-top" alt="Movie Title 2">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">Movie7</h5>
+                      <a href="#" class="btn">Buy Tickets</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 mb-4">
+            <div class="card">
+                <img src="/images/download.jpg" class="card-img-top" alt="Movie Title 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Movie8</h5>
+                    <a href="#" class="btn">Buy Tickets</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card">
+              <img src="/images/Spider-Man - Far From Home (2019).jpg" class="card-img-top" alt="Movie Title 2">
+              <div class="card-body text-center">
+                  <h5 class="card-title">Movie9</h5>
+                  <a href="#" class="btn">Buy Tickets</a>
+              </div>
+          </div>
+      </div>
+        
+                    
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+          
+          </div>
+
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button class="btn btn-primary me-md-2" type="button">View All</button>
+          
+          </div>
+          
+          <div class="container text-center">
+            <h2 class="my-4">Select Your Seats</h2>
+            <div class="screen">SCREEN</div>
+            
+            <!-- Row A -->
+            <div class="seat-row">
+                <div class="seat" onclick="toggleSeat(this)"></div>
+                <div class="seat" onclick="toggleSeat(this)"></div>
+                <div class="seat occupied"></div>
+                <div class="seat" onclick="toggleSeat(this)"></div>
+                <div class="seat" onclick="toggleSeat(this)"></div>
+            </div>
+    
+            <!-- Row B -->
+            <div class="seat-row">
+                <div class="seat" onclick="toggleSeat(this)"></div>
+                <div class="seat" onclick="toggleSeat(this)"></div>
+                <div class="seat" onclick="toggleSeat(this)"></div>
+                <div class="seat occupied"></div>
+                <div class="seat" onclick="toggleSeat(this)"></div>
+            </div>
+    
+            <!-- Row C -->
+            <div class="seat-row">
+                <div class="seat" onclick="toggleSeat(this)"></div>
+                <div class="seat occupied"></div>
+                <div class="seat" onclick="toggleSeat(this)"></div>
+                <div class="seat" onclick="toggleSeat(this)"></div>
+                <div class="seat" onclick="toggleSeat(this)"></div>
+            </div>
+    
+            <!-- Submit Button -->
+            <div class="my-4">
+                <button class="btn btn-primary" id="confirmSelection" onclick="confirmSelection()">Confirm Selection</button>
+            </div>
+        </div>
+
+        
+    
+        <script>
+            function toggleSeat(seat) {
+                if (!seat.classList.contains('occupied')) {
+                    seat.classList.toggle('selected');
+                }
+            }
+    
+            function confirmSelection() {
+                const selectedSeats = document.querySelectorAll('.seat.selected');
+                if (selectedSeats.length > 0) {
+                    alert(`You have selected ${selectedSeats.length} seat(s).`);
+                } else {
+                    alert('Please select at least one seat.');
+                }
+            }
+
+            window.onscroll = function() { myFunction() };
+
+// Get the navbar
+var navbar = document.querySelector(".navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "scrolled" when you leave the scroll position
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+}
+        </script>
+    </div>
+</body>
+</html>
